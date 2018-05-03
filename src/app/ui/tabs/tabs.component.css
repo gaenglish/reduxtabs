@@ -1,0 +1,30 @@
+
+.tab-wrapper {
+  margin-top: 20px;
+}
+
+.tab {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 4px 7px;
+  color: #bbb;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.tab:hover,
+.tab.active {
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.tab.active {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 1px solid #FFE81F;
+  border-bottom: 1px solid #fff;
+}
+
+.body {
+  border-top: 1px solid #ddd;
+}

@@ -1,0 +1,18 @@
+
+<div *ngIf="tabsLoaded | async">
+  <div class="tab-wrapper" *ngIf="selectedTab | async as selectedTab">
+
+    <div *ngFor="let tab of tabs | async"  (click)="selectTab(tab)" class="tab" [class.active]="tab.label === selectedTab.label">
+
+        {{tab.label}}
+
+    </div>
+
+    <div class="body" [innerHTML]="selectedTab.body">
+    </div>
+
+  </div>
+</div>
+
+
+
